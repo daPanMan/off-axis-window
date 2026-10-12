@@ -28,27 +28,7 @@ Keep the scene simple. The first milestone is projection correctness, not a poli
 - Native HTML range inputs for the first controls; avoid adding a GUI framework.
 - Later: MediaPipe Face Landmarker for browser-based face tracking.
 
-## Create the Repository
-
-Run these commands in the directory where you keep projects. Vite will create the app folder; initialize Git inside it.
-
-```bash
-npm create vite@latest off-axis-window -- --template vanilla-ts
-cd off-axis-window
-npm install
-npm install three
-npm run dev
-```
-
-In another terminal after the app starts:
-
-```bash
-git init
-git add .
-git commit -m "Create off-axis projection prototype"
-```
-
-Suggested structure:
+## Project Structure
 
 ```text
 src/
@@ -141,4 +121,3 @@ Capture a short screen recording from center and off-center viewpoints. If the v
 - Three.js [`Matrix4.makePerspective`](https://threejs.org/docs/pages/Matrix4.html)
 - Google [MediaPipe Face Landmarker for Web](https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker/web_js)
 - MDN [`getUserMedia()`](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
-- Existing planner background: [volumetric display learning plan](Ideas/volumetric.md)
